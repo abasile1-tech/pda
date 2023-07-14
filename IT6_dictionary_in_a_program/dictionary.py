@@ -11,3 +11,8 @@ tatzelwurm = {
 	"face-style":"cat-like",
 	"body-type":"serpent-like",
 }
+
+def get_element(dict, key):
+	return dict[key]
+
+print(f"The region of the tatzelwurm is {get_element(tatzelwurm, 'region')}")
