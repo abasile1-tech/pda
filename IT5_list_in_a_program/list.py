@@ -6,6 +6,11 @@
 # *The use of lists in programs
 # *The code you’ve submitted
 
+
+# Lists allow me to store objects in an ordered manner.
+# I wrote a little program to keep track of team members
+# I have written two functions. They ultimately allow me to 
+# find the job title of a particular team member.
 teams = [
 	{
 		"Accounts Team": 1,
@@ -13,17 +18,34 @@ teams = [
 		"Facilities Team": 3
 	},
 	{
-		"rob": "banker",
-		"steve": "salesman",
-		"angela": "accountant",
-		"gwen": "banker"
+		"Rob": "banker",
+		"Steve": "salesman",
+		"Angela": "accountant",
+		"Gwen": "banker"
 	},
 	{
-		"ariel": "art director",
-		"miriam": "painter"
+		"Ariel": "art director",
+		"Miriam": "painter"
 	},
 	{
-		"javier": "maintenance member",
-		"david": "grounds crew member"
+		"Javier": "maintenance member",
+		"David": "grounds crew member"
 	}
 ]
+
+def find_team_index(teams_list, team_name):
+	index = False
+	for key in teams_list[0].keys():
+		if key == team_name:
+			index = teams_list[0][key]
+			break
+	return index
+
+def find_job_title(teams_list, team_name, name):
+	index = find_team_index(teams_list, team_name)
+	job_title = False
+	if index:
+		job_title = teams[index][name]
+	return job_title
+
+print(find_job_title(teams, "Facilities Team", "David"))
