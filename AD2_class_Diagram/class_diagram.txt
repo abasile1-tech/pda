@@ -1,0 +1,7 @@
+I made a class Diagram showing a Dragon class and a wizard class. 
+The Dragon and the Wizard classes interact with each other by attacking and casting spells.
+
+Classes are useful because they help me to define data and methods which 
+pertain to each particular class. They help me to use object-oriented programming
+and focus on separation of responsibilities. I can have each class be responsible for
+its own data and its own methods.

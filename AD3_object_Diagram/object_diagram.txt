@@ -1,0 +1,10 @@
+Sven is an instance of the Wizard class. 
+Eldrid is an instance of the Dragon class. 
+I have given them each attributes.
+
+Objects are instances of classes. THey are useful because they
+contain the data and methods of their class, uniquely implemented.
+I can use objects to create the workers and the doers. The class 
+is like a blueprint for how objects of that class should be created.
+The class defines how the object should behave, how it exists, and 
+what methods it can take advantage of.
