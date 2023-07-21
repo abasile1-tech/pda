@@ -15,27 +15,27 @@ Only comment on errors that would stop the tests running.
 ```python
 
 class CardGame:
-
+                           
 
   def check_for_ace(self, card):
-    if card.value = 1:
+    if card.value = 1:       #!!!!ERROR #1 !!!! It needs a double equal sign ==, not a single equal sign =
       return True
-    else
+    else                     #!!!!ERROR #2 !!!!! It is missing a colon :
       return False
    
 
-  dif highest_card(self, card1 card2):
-  if card1.value > card2.value:
-    return card
+  dif highest_card(self, card1 card2):    #!!!!ERROR #3 !!!! It should say def instead of dif. !!!!ERROR #4 !!!! There is a comma missing after card1
+  if card1.value > card2.value:      #!!!!ERROR #5 !!!! The code block inside of the function must be indented
+    return card             #!!!!ERROR #6 !!!! It should return card1 rather than card
   else:
     return card2
   
 
 
-def cards_total(self, cards):
-  total
-  for card in cards:
+def cards_total(self, cards):         #!!!! ERROR #7 !!!! this function definition block needs to be indented
+  total                    #!!!ERROR #8 !!!! total should be assigned a value of 0 with total = 0
+  for card in cards
     total += card.value
-    return "You have a total of" + total
+    return "You have a total of" + total   #!!!!ERROR #9 !!!! The return statement should not be indented. The return statement should be outside of the for loop.
   
 ```
